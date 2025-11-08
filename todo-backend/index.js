@@ -12,7 +12,7 @@ app.use(cors())
 // let todos = [];
 
 // connecting mongodb
-mongoose.connect('mongodb://localhost:27017/')
+mongoose.connect(process.env.MONGO_URI)
 .then(() => {
     console.log('DB Connected!')
 })
@@ -103,6 +103,7 @@ app.delete('/todos/:id', async (req, res) => {
 
 //Start the server
 const port = 8000;
-app.listen(port, () => {
-    console.log("Server is listening to port "+port);
-})
+// app.listen(port, () => {
+//     console.log("Server is listening to port "+port);
+// })
+module.exports = app;
