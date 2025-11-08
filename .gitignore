@@ -1,0 +1,24 @@
+# Node dependencies
+node_modules/
+**/node_modules/
+
+# Environment files
+.env
+**/.env
+
+# Build outputs
+dist/
+build/
+**/build/
+
+# Logs
+*.log
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
